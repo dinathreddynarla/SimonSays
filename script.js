@@ -57,7 +57,7 @@ function startGame() {
     lives = 3;
     gameSequence = [];
     document.getElementById("score").textContent = score;
-    document.getElementById("restart-button").classList.add("hidden");
+    document.getElementById("restart-button").classList.remove("hidden");
     updateLivesDisplay();
     addNewColor();
     playSequence();
@@ -89,7 +89,7 @@ function playerInput(color) {
             sounds.gameLost.play();
             document.getElementById("messagelost").textContent = "Game Lost! Final Score: " + score;
             document.getElementById("messagelost").classList.remove("hidden");
-            document.getElementById("restart-button").classList.remove("hidden");
+            // document.getElementById("restart-button").classList.remove("hidden");
             playerTurn = false;
             return;
         }
@@ -116,3 +116,11 @@ document.querySelectorAll(".bulb").forEach(bulb => {
     bulb.addEventListener("click", () => playerInput(bulb.id));
     bulb.addEventListener("touchstart", () => playerInput(bulb.id));
 });
+function toggleInstructions() {
+    const instructionCard = document.getElementById("instruction-card");
+    if (instructionCard.classList.contains("hidden")) {
+        instructionCard.classList.remove("hidden");
+    } else {
+        instructionCard.classList.add("hidden");
+    }
+}

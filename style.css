@@ -151,6 +151,55 @@ body {
     font-size: 1.5em;
     margin-left: 5px;
 }
+.instruction-button {
+    background-color: #ff77a9;
+    border: none;
+    padding: 10px 20px;
+    color: #1a1a1d;
+    font-size: 1em;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.instruction-button:hover {
+    background-color: #ff4e50;
+}
+
+
+    #instruction-card {
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        color: black;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transform: translate(-50%, -50%);
+    }
+    
+
+
+.close-button {
+    background-color: #ff4e50;
+    border: none;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 0.9em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.close-button:hover {
+    background-color: #ff77a9;
+}
+
+
 
 @media (max-width: 400px) {
     .game-title {
@@ -172,9 +221,13 @@ body {
     }
 
     .start-button,
-    #restart-button {
+    #restart-button,.instruction-button {
         padding: 10px 15px;
         font-size: 1.2em; 
+    }
+    #instruction-card {
+        width: 90%; 
+        max-width: 300px; 
     }
 }
 
