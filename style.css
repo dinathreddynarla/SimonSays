@@ -20,7 +20,7 @@ body {
         0 0 15px #4e9cff,
         0 0 20px #39ff14,
         0 0 25px #fffb00;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     animation: neon 1.5s ease-in-out infinite alternate;
 }
 
@@ -91,13 +91,15 @@ body {
 
 #message {
     font-size: 40px;
-    text-align: center;
+    /* text-align: center; */
+    width: 50%;
+    margin: auto;
     color: #fff;
     text-shadow: 
         0 0 10px rgba(0, 255, 0, 0.7),
         0 0 20px rgba(0, 255, 0, 0.7),
         0 0 30px rgba(0, 255, 0, 0.7);
-    margin: 20px 0;
+    /* margin: 20px 0; */
     transition: opacity 0.5s;
 }
 

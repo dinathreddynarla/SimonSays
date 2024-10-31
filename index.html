@@ -21,14 +21,14 @@
     <p class="score-display">Score: <span id="score">0</span></p>
     <p class="lives-display">Lives: <span id="lives">0</span></p>
     <!-- New lives display -->
+    <p id="message" class="hidden">Your Turn!</p>
+    <p id="messagelost" class="hidden"></p>
 
     <button class="start-button" onclick="startGame()">Start Game</button>
     <button id="restart-button" class="hidden" onclick="restartGame()">
       Restart Game
     </button>
     <!-- Restart button -->
-    <p id="message" class="hidden">Your Turn!</p>
-    <p id="messagelost" class="hidden"></p>
     <button id="instruction-button" onclick="toggleInstructions()">
       Instructions
     </button>
