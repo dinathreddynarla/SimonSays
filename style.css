@@ -91,6 +91,7 @@ body {
 
 #message {
     font-size: 40px;
+    text-align: center;
     color: #fff;
     text-shadow: 
         0 0 10px rgba(0, 255, 0, 0.7),
@@ -102,6 +103,7 @@ body {
 
 #messagelost {
     font-size: 40px;
+    text-align: center;
     color: #fff;
     text-shadow: 
         0 0 10px rgba(255, 0, 0, 0.7),
