@@ -151,7 +151,7 @@ body {
     font-size: 1.5em;
     margin-left: 5px;
 }
-.instruction-button {
+#instruction-button {
     background-color: #ff77a9;
     border: none;
     padding: 10px 20px;
@@ -221,7 +221,7 @@ body {
     }
 
     .start-button,
-    #restart-button,.instruction-button {
+    #restart-button,#instruction-button {
         padding: 10px 15px;
         font-size: 1.2em; 
     }
