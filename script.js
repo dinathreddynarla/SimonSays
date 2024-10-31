@@ -97,10 +97,10 @@ function playerInput(color) {
         if (playerSequence.length === gameSequence.length) {
             score++;
             document.getElementById("score").textContent = score;
-            // if (score % 3 === 0) {
-            //     lives++;
-            //     updateLivesDisplay();
-            // }
+            if (score % 5 === 0) {
+                lives++;
+                updateLivesDisplay();
+            }
             setTimeout(() => {
                 addNewColor();
                 playSequence();
