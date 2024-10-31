@@ -152,54 +152,30 @@ body {
     margin-left: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .game-title {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .score-display,
     .lives-display {
-        font-size: 1.2em;
+        font-size: 1.7em;
     }
 
     .bulb {
-        font-size: 60px; 
+        font-size: 80px; 
     }
 
     #message,
     #messagelost {
-        font-size: 30px; 
+        font-size: 50px; 
     }
 
     .start-button,
     #restart-button {
         padding: 10px 15px;
-        font-size: 0.9em; 
+        font-size: 1.2em; 
     }
 }
 
-@media (max-width: 400px) {
-    .game-title {
-        font-size: 1.2em;
-    }
 
-    .score-display,
-    .lives-display {
-        font-size: 1em;
-    }
-
-    .bulb {
-        font-size: 50px; 
-    }
-
-    #message,
-    #messagelost {
-        font-size: 24px; 
-    }
-
-    .start-button,
-    #restart-button {
-        padding: 8px 12px;
-        font-size: 0.8em; 
-    }
-}
