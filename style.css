@@ -7,12 +7,12 @@ body {
     height: 100vh;
     font-family: 'Press Start 2P', cursive;
     color: #e6e6e6;
-    gap:10px;
+    gap: 10px;
     margin: 0;
 }
+
 .game-title {
-    color: #ff77a9;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     text-shadow: 
         0 0 5px #ff77a9,
@@ -21,19 +21,32 @@ body {
         0 0 20px #39ff14,
         0 0 25px #fffb00;
     margin-bottom: 20px;
+    animation: neon 1.5s ease-in-out infinite alternate;
 }
 
+@keyframes neon {
+    from {
+        text-shadow: 
+            0 0 5px #ff77a9,
+            0 0 10px #ff4e50,
+            0 0 15px #4e9cff,
+            0 0 20px #39ff14,
+            0 0 25px #fffb00;
+    }
+    to {
+        text-shadow: 
+            0 0 10px #ff77a9,
+            0 0 20px #ff4e50,
+            0 0 30px #4e9cff,
+            0 0 40px #39ff14,
+            0 0 50px #fffb00;
+    }
+}
 
 .game-container {
     text-align: center;
     width: 100%;
     max-width: 400px;
-}
-
-.game-title {
-    color: #ff77a9;
-    font-size: 2em;
-    margin-bottom: 10px;
 }
 
 .score-display {
@@ -162,5 +175,31 @@ body {
     #restart-button {
         padding: 10px 15px;
         font-size: 0.9em; 
+    }
+}
+
+@media (max-width: 400px) {
+    .game-title {
+        font-size: 1.2em;
+    }
+
+    .score-display,
+    .lives-display {
+        font-size: 1em;
+    }
+
+    .bulb {
+        font-size: 50px; 
+    }
+
+    #message,
+    #messagelost {
+        font-size: 24px; 
+    }
+
+    .start-button,
+    #restart-button {
+        padding: 8px 12px;
+        font-size: 0.8em; 
     }
 }
