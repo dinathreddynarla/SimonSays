@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Says Game with Bulbs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <i id="red" class="fa-solid fa-lightbulb bulb red"></i>
+      <i id="blue" class="fa-solid fa-lightbulb bulb blue"></i>
+      <i id="green" class="fa-solid fa-lightbulb bulb green"></i>
+      <i id="yellow" class="fa-solid fa-lightbulb bulb yellow"></i>
+    </div>
+    <p class="score-display">Score: <span id="score">0</span></p>
+<p class="lives-display">Lives: <span id="lives">0</span></p> <!-- New lives display -->
+
+<button class="start-button" onclick="startGame()">Start Game</button>
+<button id="restart-button" class="hidden" onclick="restartGame()">Restart Game</button> <!-- Restart button -->
+<p id="message" class="hidden">Your Turn!</p>
+<p id="messagelost" class="hidden"></p>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
