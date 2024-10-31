@@ -116,11 +116,11 @@ document.querySelectorAll(".bulb").forEach(bulb => {
     bulb.addEventListener("click", () => playerInput(bulb.id));
     bulb.addEventListener("touchstart", () => playerInput(bulb.id));
 });
+const instructionButton = document.getElementById("instruction-button");
+instructionButton.addEventListener("click", toggleInstructions);
+instructionButton.addEventListener("touchstart", toggleInstructions); 
+
 function toggleInstructions() {
     const instructionCard = document.getElementById("instruction-card");
-    if (instructionCard.classList.contains("hidden")) {
-        instructionCard.classList.remove("hidden");
-    } else {
-        instructionCard.classList.add("hidden");
-    }
+    instructionCard.classList.toggle("hidden");
 }
