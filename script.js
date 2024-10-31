@@ -117,8 +117,8 @@ document.querySelectorAll(".bulb").forEach(bulb => {
     bulb.addEventListener("touchstart", () => playerInput(bulb.id));
 });
 const instructionButton = document.getElementById("instruction-button");
-instructionButton.addEventListener("click", toggleInstructions);
-instructionButton.addEventListener("touchstart", toggleInstructions); 
+instructionButton.addEventListener("click",()=> toggleInstructions);
+instructionButton.addEventListener("touchstart",()=> toggleInstructions); 
 
 function toggleInstructions() {
     const instructionCard = document.getElementById("instruction-card");
